@@ -22,3 +22,7 @@ fullName.call(name2)
 fullName.call(name2,'Ernakulam','kerala') 
 //but using apply, pass arguments in array
 fullName.apply(name1,['Ernakulam','kerala'])
+
+let bindMethod = fullName.bind(name2,"From","Bind Method")
+console.log(bindMethod) //f(hometown,state);
+bindMethod()
